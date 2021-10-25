@@ -1,0 +1,3 @@
+C:/University/Course work/bomberman/cmake-build-debug/CMakeFiles/bomberman.dir
+C:/University/Course work/bomberman/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/University/Course work/bomberman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
