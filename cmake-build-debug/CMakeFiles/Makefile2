@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\University\Course work\bomberman"
+CMAKE_SOURCE_DIR = C:\University\CourseWork\bomberman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\University\Course work\bomberman\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\University\CourseWork\bomberman\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -92,14 +92,14 @@ clean: CMakeFiles/bomberman.dir/clean
 CMakeFiles/bomberman.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bomberman.dir\build.make CMakeFiles/bomberman.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bomberman.dir\build.make CMakeFiles/bomberman.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target bomberman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target bomberman"
 .PHONY : CMakeFiles/bomberman.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bomberman.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/bomberman.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/bomberman.dir/rule
 
 # Convenience name for target.

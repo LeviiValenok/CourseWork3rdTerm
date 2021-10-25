@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\University\Course work\bomberman"
+CMAKE_SOURCE_DIR = C:\University\CourseWork\bomberman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\University\Course work\bomberman\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\University\CourseWork\bomberman\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bomberman.dir/depend.make
@@ -77,68 +77,68 @@ include CMakeFiles/bomberman.dir/flags.make
 
 CMakeFiles/bomberman.dir/main.cpp.obj: CMakeFiles/bomberman.dir/flags.make
 CMakeFiles/bomberman.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/bomberman.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\main.cpp.obj -c "C:\University\Course work\bomberman\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/bomberman.dir/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\main.cpp.obj -c C:\University\CourseWork\bomberman\main.cpp
 
 CMakeFiles/bomberman.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bomberman.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\University\Course work\bomberman\main.cpp" > CMakeFiles\bomberman.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bomberman\main.cpp > CMakeFiles\bomberman.dir\main.cpp.i
 
 CMakeFiles/bomberman.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bomberman.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\University\Course work\bomberman\main.cpp" -o CMakeFiles\bomberman.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bomberman\main.cpp -o CMakeFiles\bomberman.dir\main.cpp.s
 
 CMakeFiles/bomberman.dir/Player.cpp.obj: CMakeFiles/bomberman.dir/flags.make
 CMakeFiles/bomberman.dir/Player.cpp.obj: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bomberman.dir/Player.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Player.cpp.obj -c "C:\University\Course work\bomberman\Player.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bomberman.dir/Player.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Player.cpp.obj -c C:\University\CourseWork\bomberman\Player.cpp
 
 CMakeFiles/bomberman.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bomberman.dir/Player.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\University\Course work\bomberman\Player.cpp" > CMakeFiles\bomberman.dir\Player.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bomberman\Player.cpp > CMakeFiles\bomberman.dir\Player.cpp.i
 
 CMakeFiles/bomberman.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bomberman.dir/Player.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\University\Course work\bomberman\Player.cpp" -o CMakeFiles\bomberman.dir\Player.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bomberman\Player.cpp -o CMakeFiles\bomberman.dir\Player.cpp.s
 
 CMakeFiles/bomberman.dir/Enemies.cpp.obj: CMakeFiles/bomberman.dir/flags.make
 CMakeFiles/bomberman.dir/Enemies.cpp.obj: ../Enemies.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bomberman.dir/Enemies.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Enemies.cpp.obj -c "C:\University\Course work\bomberman\Enemies.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bomberman.dir/Enemies.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Enemies.cpp.obj -c C:\University\CourseWork\bomberman\Enemies.cpp
 
 CMakeFiles/bomberman.dir/Enemies.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bomberman.dir/Enemies.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\University\Course work\bomberman\Enemies.cpp" > CMakeFiles\bomberman.dir\Enemies.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bomberman\Enemies.cpp > CMakeFiles\bomberman.dir\Enemies.cpp.i
 
 CMakeFiles/bomberman.dir/Enemies.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bomberman.dir/Enemies.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\University\Course work\bomberman\Enemies.cpp" -o CMakeFiles\bomberman.dir\Enemies.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bomberman\Enemies.cpp -o CMakeFiles\bomberman.dir\Enemies.cpp.s
 
 CMakeFiles/bomberman.dir/Bomb.cpp.obj: CMakeFiles/bomberman.dir/flags.make
 CMakeFiles/bomberman.dir/Bomb.cpp.obj: ../Bomb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bomberman.dir/Bomb.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Bomb.cpp.obj -c "C:\University\Course work\bomberman\Bomb.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bomberman.dir/Bomb.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Bomb.cpp.obj -c C:\University\CourseWork\bomberman\Bomb.cpp
 
 CMakeFiles/bomberman.dir/Bomb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bomberman.dir/Bomb.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\University\Course work\bomberman\Bomb.cpp" > CMakeFiles\bomberman.dir\Bomb.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bomberman\Bomb.cpp > CMakeFiles\bomberman.dir\Bomb.cpp.i
 
 CMakeFiles/bomberman.dir/Bomb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bomberman.dir/Bomb.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\University\Course work\bomberman\Bomb.cpp" -o CMakeFiles\bomberman.dir\Bomb.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bomberman\Bomb.cpp -o CMakeFiles\bomberman.dir\Bomb.cpp.s
 
 CMakeFiles/bomberman.dir/Map.cpp.obj: CMakeFiles/bomberman.dir/flags.make
 CMakeFiles/bomberman.dir/Map.cpp.obj: ../Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/bomberman.dir/Map.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Map.cpp.obj -c "C:\University\Course work\bomberman\Map.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/bomberman.dir/Map.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\bomberman.dir\Map.cpp.obj -c C:\University\CourseWork\bomberman\Map.cpp
 
 CMakeFiles/bomberman.dir/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bomberman.dir/Map.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\University\Course work\bomberman\Map.cpp" > CMakeFiles\bomberman.dir\Map.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\University\CourseWork\bomberman\Map.cpp > CMakeFiles\bomberman.dir\Map.cpp.i
 
 CMakeFiles/bomberman.dir/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bomberman.dir/Map.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\University\Course work\bomberman\Map.cpp" -o CMakeFiles\bomberman.dir\Map.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\University\CourseWork\bomberman\Map.cpp -o CMakeFiles\bomberman.dir\Map.cpp.s
 
 # Object files for target bomberman
 bomberman_OBJECTS = \
@@ -160,7 +160,7 @@ bomberman.exe: CMakeFiles/bomberman.dir/build.make
 bomberman.exe: CMakeFiles/bomberman.dir/linklibs.rsp
 bomberman.exe: CMakeFiles/bomberman.dir/objects1.rsp
 bomberman.exe: CMakeFiles/bomberman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bomberman.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bomberman.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\bomberman.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -173,6 +173,6 @@ CMakeFiles/bomberman.dir/clean:
 .PHONY : CMakeFiles/bomberman.dir/clean
 
 CMakeFiles/bomberman.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\University\Course work\bomberman" "C:\University\Course work\bomberman" "C:\University\Course work\bomberman\cmake-build-debug" "C:\University\Course work\bomberman\cmake-build-debug" "C:\University\Course work\bomberman\cmake-build-debug\CMakeFiles\bomberman.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\University\CourseWork\bomberman C:\University\CourseWork\bomberman C:\University\CourseWork\bomberman\cmake-build-debug C:\University\CourseWork\bomberman\cmake-build-debug C:\University\CourseWork\bomberman\cmake-build-debug\CMakeFiles\bomberman.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bomberman.dir/depend
 
