@@ -5,45 +5,65 @@
 #ifndef BOMBERMANLOGIC_BOMB_H
 #define BOMBERMANLOGIC_BOMB_H
 
+
 #include "Enemies.h"
 #include "Map.h"
+#include "Player.h"
 
+class Bomb {
+private:
+    int **bombCoordinate;
+    int iBomb;
+    int jBomb;
+public:
+    friend class Player;
+    friend class Map;
+    friend class Enemies;
+//        friend void setBomb(Bomb bomb, Player player);
 
-class Bomb
-{
-    private:
-        int** bombCoordinate;
-        int iBomb;
-        int jBomb;
-    public:
-        friend class Player;
-        friend class Enemies;
+    //something wrong with class Player. i can't get access to its fields
 
-        //something wrong with class Player. i can't get access to its fields
-        void setBomb(Player player)
+    void setBomb(Player player)
+    {
+        int i = player.iPlayer;
+        int j = player.jPlayer;
+        bombCoordinate[i][j];
+    }
+    void destroyBlocksAndEnemies(Enemies enemy1, Enemies enemy2, Enemies enemy3, Player player, Map map)
+    {
+        //TODO: timer???
+        //TODO: Change enemy's coordinate to current enemy coordinate
+        //TODO: Get current eney coordinate
+        int i = player.iPlayer;
+        int j = player.jPlayer;
+        if (bombCoordinate[iBomb][jBomb] == enemy1.enemiesCoordinate[0][0])
         {
-            int i, j;
-
-            bombCoordinate[i][j];
-        }
-        void destroyBlocksAndEnemies(Enemies enemy1, Enemies enemy2, Enemies enemy3, Map map)
+            //destroy an enemy
+            player.score++;
+        } else if (bombCoordinate[iBomb][jBomb] == enemy2.enemiesCoordinate[0][0])
         {
-            //TODO: timer???
-            //TODO: Change enemy's coordinate to current enemy coordinate
-            //TODO: Get current eney coordinate
-            if (bombCoordinate[iBomb][jBomb] == enemy1.enemiesCoordinate[0][0])
-            {
-                //destroy an object
-            }
-            else if (bombCoordinate[iBomb][jBomb] == enemy2.enemiesCoordinate[0][0])
-            {
-                //destroy an object
-            }
-            else if (bombCoordinate[iBomb][jBomb] == enemy3.enemiesCoordinate[0][0])
-            {
-                //destroy an object
-            }
+            //destroy an enemy
+            player.score++;
+        } else if (bombCoordinate[iBomb][jBomb] == enemy3.enemiesCoordinate[0][0])
+        {
+            //destroy an enemy
+            player.score++;
         }
+
+        if (bombCoordinate[iBomb][jBomb] == 1)
+        {
+            //destroy block with coordinate [iBomb][jBomb]
+            map.mapCoordinate[iBomb][jBomb] = 0;
+        }
+
+        if (bombCoordinate[iBomb][jBomb] == player.playerCoordinate[i][j])
+        {
+            player.health--;
+        }
+
+    }
+
+
 
 };
 
