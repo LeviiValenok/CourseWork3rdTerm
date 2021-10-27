@@ -5,6 +5,20 @@
 #ifndef BOMBERMANLOGIC_MAP_H
 #define BOMBERMANLOGIC_MAP_H
 
+#include "Player.h"
+#include "Enemies.h"
+
+enum Mark
+{
+    emptyPath = 0,
+    destroyedBlock = 1,
+    indestructible = 2,
+    bomb = 3,
+    player = 4,
+    enemy = 5
+};
+
+
 
 class Map
 {
@@ -21,6 +35,22 @@ class Map
         int iMap;
         int jMap;
         int** mapCoordinate;
+        friend class Bomb;
+        friend class Player;
+        friend class Enemies;
+
+        Player& playerLocation(Player& player)
+        {
+            return player;
+        }
+
+        Enemies& enemiesLocation(Enemies& enemy)
+        {
+            return enemy;
+        }
+
+
+
 };
 
 

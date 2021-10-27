@@ -7,17 +7,20 @@
 #include <stdbool.h>
 
 
+
 class Player
 {
     private:
         int** playerCoordinate;
         int iPlayer;
         int jPlayer;
-        static int health;
-        static int score;
     public:
+        int health = 3;
+        int score = 0;
+
     friend class Bomb;
     friend class Enemies;
+
     bool youCanMoveUp()
     {
         if (playerCoordinate[iPlayer - 1][jPlayer] == 0 && (iPlayer - 1) >= 0)
@@ -65,6 +68,6 @@ class Player
         }
     }
 };
- int Player::health = 3;
+
 
 #endif //BOMBERMANLOGIC_PLAYER_H
