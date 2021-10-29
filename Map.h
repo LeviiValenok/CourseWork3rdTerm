@@ -10,12 +10,12 @@
 
 enum Mark
 {
-    emptyPath = 0,
-    destroyedBlock = 1,
-    indestructible = 2,
-    bomb = 3,
-    player = 4,
-    enemy = 5
+    EemptyPath = 0,
+    EdestroyedBlock = 1,
+    Eindestructible = 2,
+    Ebomb = 3,
+    Eplayer = 4,
+    Eenemies = 5
 };
 
 
