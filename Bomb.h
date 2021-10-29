@@ -28,18 +28,18 @@ public:
 
     }
 
-    void chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBombCurrent, int jBombCurrent)
+    void chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBombCurrent, int jBombCurrent, Map map)
     {
         switch (bomb.bombCoordinate[iBombCurrent][jBombCurrent])
         {
             case EdestroyedBlock:
             {
-                //destroy block
+                map.mapCoordinate[iBombCurrent][jBombCurrent] = EemptyPath;
                 break;
             }
             case Eenemies:
             {
-                //destroy enemy
+                //destroy enemy;
                 break;
             }
             case Eplayer:
@@ -53,7 +53,7 @@ public:
         }
     }
 
-    void destroyObjects(Player& player, Enemies& enemy, Bomb bomb)
+    void destroyObjects(Player& player, Enemies& enemy, Bomb bomb, Map map)
     {
         int iPlayerCurrent = player.iPlayer;
         int jPlayerCurrent = player.jPlayer;
@@ -63,32 +63,30 @@ public:
         if (bomb.bombCoordinate[iBomb][jBomb] == EdestroyedBlock ||
             bomb.bombCoordinate[iBomb][jBomb] == Eenemies || bomb.bombCoordinate[iBomb][jBomb] == Eplayer)
         {
-            chooseATarget(player, enemy, bomb, iBomb, jBomb);
+            chooseATarget(player, enemy, bomb, iBomb, jBomb, map);
         }
         if (bomb.bombCoordinate[iBomb + 1][jBomb] == EdestroyedBlock ||
            bomb.bombCoordinate[iBomb + 1][jBomb] == Eenemies || bomb.bombCoordinate[iBomb + 1][jBomb] == Eplayer)
         {
-            chooseATarget(player, enemy, bomb, iBomb + 1, jBomb);
+            chooseATarget(player, enemy, bomb, iBomb + 1, jBomb, map);
         }
         if (bomb.bombCoordinate[iBomb - 1][jBomb] == EdestroyedBlock ||
             bomb.bombCoordinate[iBomb - 1][jBomb] == Eenemies || bomb.bombCoordinate[iBomb - 1][jBomb] == Eplayer)
         {
-            chooseATarget(player, enemy, bomb, iBomb - 1, jBomb);
+            chooseATarget(player, enemy, bomb, iBomb - 1, jBomb, map);
         }
         if (bomb.bombCoordinate[iBomb][jBomb + 1] == EdestroyedBlock ||
             bomb.bombCoordinate[iBomb][jBomb + 1] == Eenemies || bomb.bombCoordinate[iBomb][jBomb + 1] == Eplayer)
         {
-            chooseATarget(player, enemy, bomb, iBomb, jBomb + 1);
+            chooseATarget(player, enemy, bomb, iBomb, jBomb + 1, map);
         }
         if (bomb.bombCoordinate[iBomb][jBomb - 1] == EdestroyedBlock ||
             bomb.bombCoordinate[iBomb][jBomb - 1] == Eenemies || bomb.bombCoordinate[iBomb][jBomb - 1] == Eplayer)
         {
-            chooseATarget(player, enemy, bomb, iBomb, jBomb - 1);
+            chooseATarget(player, enemy, bomb, iBomb, jBomb - 1, map);
         }
     }
 
-
-    void
 /*    void destroyBlocks(Map& map)
     {
         if (bombCoordinate[iBomb][jBomb] == 1)

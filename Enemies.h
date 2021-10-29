@@ -23,8 +23,9 @@ public:
     }
     ~Enemies()
     {
-        delete enemiesCoordinate;
+
     }
+
     void collisionWithPlayer(Player player, Enemies enemy)
     {
         int iPlayer = player.iPlayer;
