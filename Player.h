@@ -43,7 +43,6 @@ class Player
             return false;
         }
     }
-
     bool youCanMoveRight()
     {
         if (playerCoordinate[iPlayer][jPlayer + 1] == 0 && (jPlayer + 1) < 8)
@@ -55,7 +54,6 @@ class Player
             return false;
         }
     }
-
     bool youCanMoveLeft()
     {
         if (playerCoordinate[iPlayer][jPlayer - 1] == 0 && (jPlayer - 1) >= 0)

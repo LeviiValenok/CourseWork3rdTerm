@@ -7,8 +7,9 @@
 
 #include "Player.h"
 #include "Enemies.h"
+#include <stdio.h>
 
-enum Mark
+enum cellType
 {
     EemptyPath = 0,
     EdestroyedBlock = 1,
@@ -19,11 +20,13 @@ enum Mark
 };
 
 
+//add value exit
 
 class Map
 {
     private:
-        int mapSize[6][8] =
+        cellType type;
+        int table[6][8] =
             {
                 { 0, 0, 0, 0, 1, 1, 0, 0 },
                 { 0, 2, 0, 2, 0, 2, 0, 0 },
@@ -32,24 +35,31 @@ class Map
                 { 0, 0, 0, 0, 1, 1, 0, 0 },
                 { 0, 1, 1, 0, 0, 0, 0, 0 }
             };
-        int iMap;
-        int jMap;
-        int** mapCoordinate;
+//        int iMap;
+//        int jMap;
+        public:
         friend class Bomb;
         friend class Player;
         friend class Enemies;
-
-        Player& playerLocation(Player& player)
+        Map()
         {
-            return player;
-        }
 
-        Enemies& enemiesLocation(Enemies& enemy)
+        }
+        void setCellValue(int i, int j, int value)
         {
-            return enemy;
+            table[i][j] = value;
         }
-
-
+        void outputCTable()
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    std::cout << " " << table[i][j] << " ";
+                }
+                std::cout << "\n";
+            }
+        }
 
 };
 

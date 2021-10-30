@@ -1,9 +1,11 @@
 #include <iostream>
-#include "Player.h"
+#include <stdio.h>
+#include "Map.h"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-
-
+int main()
+{
+    Map* map = new Map();
+    map->setCellValue(0, 0, 5);
+    map->outputCTable();
     return 0;
 }
