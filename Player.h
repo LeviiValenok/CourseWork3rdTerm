@@ -26,7 +26,7 @@ class Player
     friend class Enemies;
     friend class Map;
 
-    void  movement(Player* player, Map& map, bool& isQuite);
+    void  movement(Player& player, Map& map, bool& isQuite);
     bool youCanMoveUp(Map map);
     bool youCanMoveDown(Map map);
     bool youCanMoveRight(Map map);

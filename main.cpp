@@ -19,7 +19,8 @@ int main()
     {
         system("cls");
         map->outputCTable();
-        player->movement(player, *map, isQuite);
+        player->movement(*player, *map, isQuite);
+        
     }
 
 //    map->setCellValue(0, 0, 5);

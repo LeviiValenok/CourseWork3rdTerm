@@ -3,6 +3,7 @@
 //
 #include "Player.h"
 #include "Map.h"
+#include <stdio.h>
 
 Player :: Player(int i, int j, Map& map)
 {
@@ -66,47 +67,59 @@ bool Player :: youCanMoveLeft(Map map)
         return false;
     }
 }
-
-void Player :: movement(Player* player, Map& map, bool& isQuite)
+void Player :: movement(Player& player, Map& map, bool& isQuite)
 {
-    if(kbhit())
+    int iTemp = iPlayer;
+    int jTemp = jPlayer;
+    rewind(stdin);
+    if(_kbhit())
     {
-        switch (getch())
+        switch (_getch())
         {
+
 
             case 'a':
             {
-                while(youCanMoveLeft(map))
+                if(youCanMoveLeft(map))
                 {
-                    map.setCellValue(iPlayer, jPlayer--, Eplayer);
-                    map.setCellValue(iPlayer, jPlayer++, EemptyPath);
+                    map.setCellValue(iPlayer, --jPlayer, Eplayer);
+                    iTemp = iPlayer;
+                    jTemp = jPlayer;
+                    map.setCellValue(iTemp, ++jTemp, EemptyPath);
                 }
                 break;
             }
             case 'd':
             {
-                while(youCanMoveRight(map))
+                if(youCanMoveRight(map))
                 {
-                    map.setCellValue(iPlayer, jPlayer++, Eplayer);
-                    map.setCellValue(iPlayer, jPlayer--, EemptyPath);
+
+                    map.setCellValue(iPlayer, ++jPlayer, Eplayer);
+                    iTemp = iPlayer;
+                    jTemp = jPlayer;
+                    map.setCellValue(iTemp, --jTemp, EemptyPath);
                 }
                 break;
             }
             case 'w':
             {
-                while(youCanMoveUp(map))
+                if(youCanMoveUp(map))
                 {
-                    map.setCellValue(iPlayer--, jPlayer, Eplayer);
-                    map.setCellValue(iPlayer++, jPlayer, EemptyPath);
+                    map.setCellValue(--iPlayer, jPlayer, Eplayer);
+                    iTemp = iPlayer;
+                    jTemp = jPlayer;
+                    map.setCellValue(++iTemp, jTemp, EemptyPath);
                 }
                 break;
             }
             case 's':
             {
-                while(youCanMoveDown(map))
+                if(youCanMoveDown(map))
                 {
-                    map.setCellValue(iPlayer++, jPlayer, Eplayer);
-                    map.setCellValue(iPlayer--, jPlayer, EemptyPath);
+                    map.setCellValue(++iPlayer, jPlayer, Eplayer);
+                    iTemp = iPlayer;
+                    jTemp = jPlayer;
+                    map.setCellValue(--iTemp, jTemp, EemptyPath);
                 }
                 break;
             }

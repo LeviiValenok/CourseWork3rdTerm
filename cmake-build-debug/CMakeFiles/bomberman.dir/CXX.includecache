@@ -39,6 +39,8 @@ Player.h
 C:/University/CourseWork/bomberman/Player.h
 Map.h
 C:/University/CourseWork/bomberman/Map.h
+stdio.h
+-
 
 C:/University/CourseWork/bomberman/Player.h
 stdbool.h
