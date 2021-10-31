@@ -1,20 +1,20 @@
 //
-// Created by gaydi on 25.10.2021.
+// Created by gaydi on 31.10.2021.
 //
 
 #include "Enemies.h"
 #include "Player.h"
 
-Enemies()
+Enemies :: Enemies()
 {
     enemiesCoordinate[0][0];
 }
-~Enemies()
+Enemies :: ~Enemies()
 {
 
 }
 
-void collisionWithPlayer(Player player, Enemies enemy)
+void Enemies :: collisionWithPlayer(Player player, Enemies enemy)
 {
     int iPlayer = player.iPlayer;
     int jPlayer = player.jPlayer;

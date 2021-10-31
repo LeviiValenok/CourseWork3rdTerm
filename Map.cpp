@@ -5,6 +5,11 @@
 #include "Map.h"
 #include <iostream>
 
+
+Map :: Map()
+{
+
+}
 void Map :: setCellValue(int i, int j, int value)
 {
     table[i][j] = value;
@@ -12,12 +17,29 @@ void Map :: setCellValue(int i, int j, int value)
 
 void Map :: outputCTable()
 {
-    for (int i = 0; i < 6; i++)
+    system("cls");
+    for (int i = 0; i < 9; i++)
         {
-            for (int j = 0; j < 8; j++)
+            for (int j = 0; j < 9; j++)
             {
-                std::cout << " " << table[i][j] << " ";
+                if (table[i][j] == Eindestructible)
+                {
+                    std::cout << "#";
+                }else if(table[i][j] == EdestroyedBlock)
+                {
+                    std::cout << "0";
+                }else if(table[i][j] == EemptyPath)
+                {
+                    std::cout << ' ';
+                }else if(table[i][j] == Eplayer)
+                {
+                    std::cout << '4';
+                }else if(table[i][j] == Eenemies)
+                {
+                    std::cout << '5';
+                }
             }
          std::cout << "\n";
         }
 }
+

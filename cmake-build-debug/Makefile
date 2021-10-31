@@ -195,33 +195,6 @@ Enemies.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bomberman.dir\build.make CMakeFiles/bomberman.dir/Enemies.cpp.s
 .PHONY : Enemies.cpp.s
 
-Example.obj: Example.cpp.obj
-
-.PHONY : Example.obj
-
-# target to build an object file
-Example.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bomberman.dir\build.make CMakeFiles/bomberman.dir/Example.cpp.obj
-.PHONY : Example.cpp.obj
-
-Example.i: Example.cpp.i
-
-.PHONY : Example.i
-
-# target to preprocess a source file
-Example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bomberman.dir\build.make CMakeFiles/bomberman.dir/Example.cpp.i
-.PHONY : Example.cpp.i
-
-Example.s: Example.cpp.s
-
-.PHONY : Example.s
-
-# target to generate assembly for a file
-Example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\bomberman.dir\build.make CMakeFiles/bomberman.dir/Example.cpp.s
-.PHONY : Example.cpp.s
-
 Map.obj: Map.cpp.obj
 
 .PHONY : Map.obj
@@ -318,9 +291,6 @@ help:
 	@echo ... Enemies.obj
 	@echo ... Enemies.i
 	@echo ... Enemies.s
-	@echo ... Example.obj
-	@echo ... Example.i
-	@echo ... Example.s
 	@echo ... Map.obj
 	@echo ... Map.i
 	@echo ... Map.s

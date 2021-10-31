@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/University/CourseWork/bomberman/Bomb.cpp" "C:/University/CourseWork/bomberman/cmake-build-debug/CMakeFiles/bomberman.dir/Bomb.cpp.obj"
   "C:/University/CourseWork/bomberman/Enemies.cpp" "C:/University/CourseWork/bomberman/cmake-build-debug/CMakeFiles/bomberman.dir/Enemies.cpp.obj"
-  "C:/University/CourseWork/bomberman/Example.cpp" "C:/University/CourseWork/bomberman/cmake-build-debug/CMakeFiles/bomberman.dir/Example.cpp.obj"
   "C:/University/CourseWork/bomberman/Map.cpp" "C:/University/CourseWork/bomberman/cmake-build-debug/CMakeFiles/bomberman.dir/Map.cpp.obj"
   "C:/University/CourseWork/bomberman/Player.cpp" "C:/University/CourseWork/bomberman/cmake-build-debug/CMakeFiles/bomberman.dir/Player.cpp.obj"
   "C:/University/CourseWork/bomberman/main.cpp" "C:/University/CourseWork/bomberman/cmake-build-debug/CMakeFiles/bomberman.dir/main.cpp.obj"

@@ -92,12 +92,6 @@
 		<Unit filename="C:/University/CourseWork/bomberman/Enemies.h">
 			<Option target="bomberman"/>
 		</Unit>
-		<Unit filename="C:/University/CourseWork/bomberman/Example.cpp">
-			<Option target="bomberman"/>
-		</Unit>
-		<Unit filename="C:/University/CourseWork/bomberman/Example.h">
-			<Option target="bomberman"/>
-		</Unit>
 		<Unit filename="C:/University/CourseWork/bomberman/Map.cpp">
 			<Option target="bomberman"/>
 		</Unit>

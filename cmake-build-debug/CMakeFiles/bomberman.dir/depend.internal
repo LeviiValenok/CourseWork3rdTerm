@@ -3,10 +3,11 @@
 
 CMakeFiles/bomberman.dir/Bomb.cpp.obj
  C:/University/CourseWork/bomberman/Bomb.cpp
-CMakeFiles/bomberman.dir/Enemies.cpp.obj
- C:/University/CourseWork/bomberman/Enemies.cpp
+ C:/University/CourseWork/bomberman/Bomb.h
  C:/University/CourseWork/bomberman/Enemies.h
-CMakeFiles/bomberman.dir/Example.cpp.obj
+ C:/University/CourseWork/bomberman/Map.h
+ C:/University/CourseWork/bomberman/Player.h
+CMakeFiles/bomberman.dir/Enemies.cpp.obj
 CMakeFiles/bomberman.dir/Map.cpp.obj
  C:/University/CourseWork/bomberman/Map.cpp
  C:/University/CourseWork/bomberman/Map.h
@@ -15,6 +16,8 @@ CMakeFiles/bomberman.dir/Player.cpp.obj
  C:/University/CourseWork/bomberman/Player.cpp
  C:/University/CourseWork/bomberman/Player.h
 CMakeFiles/bomberman.dir/main.cpp.obj
+ C:/University/CourseWork/bomberman/Bomb.h
+ C:/University/CourseWork/bomberman/Enemies.h
  C:/University/CourseWork/bomberman/Map.h
  C:/University/CourseWork/bomberman/Player.h
  C:/University/CourseWork/bomberman/main.cpp

@@ -19,7 +19,7 @@ private:
 public:
 
     friend class Player;
-    friend class Bomb;*
+    friend class Bomb;
 
     Enemies();
     ~Enemies();

@@ -5,7 +5,8 @@
 #ifndef BOMBERMANLOGIC_PLAYER_H
 #define BOMBERMANLOGIC_PLAYER_H
 #include <stdbool.h>
-
+#include <conio.h>
+#include "Map.h"
 
 class Player
 {
@@ -18,69 +19,24 @@ class Player
     int score = 0;
 
     Player();
-    Player(int i, int j);
+    Player(int i, int j, Map& map);
     int getIPosition();
     int getJPosition();
     friend class Bomb;
     friend class Enemies;
     friend class Map;
-//        {
-//            iPlayer = 0;
-//            jPlayer = 0;
-//        }
 
-//        {
-//            iPlayer = i;
-//            jPlayer = j;
-//        }
+    void  movement(Player* player, Map& map, bool& isQuite);
+    bool youCanMoveUp(Map map);
+    bool youCanMoveDown(Map map);
+    bool youCanMoveRight(Map map);
+    bool youCanMoveLeft(Map map);
+/*
 
 
-//    bool youCanMoveUp()
-//    {
-//        if (playerCoordinate[iPlayer - 1][jPlayer] == 0 && (iPlayer - 1) >= 0)
-//        {
-//            return true;
-//        }
-//        else
-//        {
-//            return false;
-//        }
-//    }
-//    bool youCanMoveDown()
-//    {
-//        if (playerCoordinate[iPlayer + 1][jPlayer] == 0 && (iPlayer + 1) < 6)
-//        {
-//            return true;
-//        }
-//        else
-//        {
-//            return false;
-//        }
-//    }
-//    bool youCanMoveRight()
-//    {
-//        if (playerCoordinate[iPlayer][jPlayer + 1] == 0 && (jPlayer + 1) < 8)
-//        {
-//            return true;
-//        }
-//        else
-//        {
-//            return false;
-//        }
-//    }
-//    bool youCanMoveLeft()
-//    {
-//        if (playerCoordinate[iPlayer][jPlayer - 1] == 0 && (jPlayer - 1) >= 0)
-//        {
-//            return true;
-//        }
-//        else
-//        {
-//            return false;
-//        }
-//    }
-//
-//    void moveRight(Map &map);
+
+
+    void moveRight(Map &map);*/
 };
 
 

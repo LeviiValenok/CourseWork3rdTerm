@@ -6,28 +6,44 @@
 
 #IncludeRegexTransform: 
 
-C:/University/CourseWork/bomberman/Enemies.cpp
+C:/University/CourseWork/bomberman/Bomb.cpp
+Bomb.h
+C:/University/CourseWork/bomberman/Bomb.h
+Player.h
+C:/University/CourseWork/bomberman/Player.h
+Map.h
+C:/University/CourseWork/bomberman/Map.h
+Enemies.h
+C:/University/CourseWork/bomberman/Enemies.h
+
+C:/University/CourseWork/bomberman/Bomb.h
+stdio.h
+-
+Player.h
+C:/University/CourseWork/bomberman/Player.h
+Map.h
+C:/University/CourseWork/bomberman/Map.h
 Enemies.h
 C:/University/CourseWork/bomberman/Enemies.h
 
 C:/University/CourseWork/bomberman/Enemies.h
 iostream
 -
-
-C:/University/CourseWork/bomberman/Map.cpp
-Map.h
-C:/University/CourseWork/bomberman/Map.h
+Player.h
+C:/University/CourseWork/bomberman/Player.h
 
 C:/University/CourseWork/bomberman/Map.h
-stdio.h
--
 
 C:/University/CourseWork/bomberman/Player.cpp
 Player.h
 C:/University/CourseWork/bomberman/Player.h
+Map.h
+C:/University/CourseWork/bomberman/Map.h
 
 C:/University/CourseWork/bomberman/Player.h
 stdbool.h
+-
+conio.h
 -
 Map.h
 C:/University/CourseWork/bomberman/Map.h
@@ -37,6 +53,18 @@ iostream
 -
 stdio.h
 -
+stdbool.h
+-
+stdlib.h
+-
+windows.h
+-
+Map.h
+C:/University/CourseWork/bomberman/Map.h
 Player.h
 C:/University/CourseWork/bomberman/Player.h
+Bomb.h
+C:/University/CourseWork/bomberman/Bomb.h
+Enemies.h
+C:/University/CourseWork/bomberman/Enemies.h
 

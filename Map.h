@@ -6,7 +6,6 @@
 #define BOMBERMANLOGIC_MAP_H
 
 
-
 enum cellType
 {
     EemptyPath = 0,
@@ -24,18 +23,21 @@ class Map
 {
     private:
         cellType type;
-        int table[6][8] =
+        int table[8][9] =
             {
-                { 0, 0, 0, 0, 1, 1, 0, 0 },
-                { 0, 2, 0, 2, 0, 2, 0, 0 },
-                { 0, 0, 1, 0, 0, 0, 0, 0 },
-                { 0, 2, 0, 2, 0, 2, 0, 0 },
-                { 0, 0, 0, 0, 1, 1, 0, 0 },
-                { 0, 1, 1, 0, 0, 0, 0, 0 }
+                {2, 2, 2, 2, 2, 2, 2, 2, 2},
+                {2, 0, 0, 0, 0, 1, 1, 0, 2},
+                {2, 0, 2, 0, 2, 0, 2, 0, 2},
+                {2, 0, 0, 1, 0, 0, 0, 0, 2},
+                {2, 0, 2, 0, 2, 0, 2, 0, 2},
+                {2, 0, 0, 0, 0, 1, 1, 0, 2},
+                {2, 0, 1, 1, 0, 0, 0, 0, 2},
+                {2, 2, 2, 2, 2, 2, 2, 2, 2}
             };
 //        int iMap;
 //        int jMap;
         public:
+        friend class Player;
         friend class Bomb;
         friend class Enemies;
         Map();
