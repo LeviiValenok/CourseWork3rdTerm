@@ -7,64 +7,80 @@
 #include <stdbool.h>
 
 
-
 class Player
 {
     private:
-        int** playerCoordinate;
+        int **playerCoordinate;
         int iPlayer;
         int jPlayer;
     public:
-        int health = 3;
-        int score = 0;
+    int health = 3;
+    int score = 0;
 
+    Player();
+    Player(int i, int j);
+    int getIPosition();
+    int getJPosition();
     friend class Bomb;
     friend class Enemies;
+    friend class Map;
+//        {
+//            iPlayer = 0;
+//            jPlayer = 0;
+//        }
 
-    bool youCanMoveUp()
-    {
-        if (playerCoordinate[iPlayer - 1][jPlayer] == 0 && (iPlayer - 1) >= 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-    bool youCanMoveDown()
-    {
-        if (playerCoordinate[iPlayer + 1][jPlayer] == 0 && (iPlayer + 1) < 6)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-    bool youCanMoveRight()
-    {
-        if (playerCoordinate[iPlayer][jPlayer + 1] == 0 && (jPlayer + 1) < 8)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-    bool youCanMoveLeft()
-    {
-        if (playerCoordinate[iPlayer][jPlayer - 1] == 0 && (jPlayer - 1) >= 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+//        {
+//            iPlayer = i;
+//            jPlayer = j;
+//        }
+
+
+//    bool youCanMoveUp()
+//    {
+//        if (playerCoordinate[iPlayer - 1][jPlayer] == 0 && (iPlayer - 1) >= 0)
+//        {
+//            return true;
+//        }
+//        else
+//        {
+//            return false;
+//        }
+//    }
+//    bool youCanMoveDown()
+//    {
+//        if (playerCoordinate[iPlayer + 1][jPlayer] == 0 && (iPlayer + 1) < 6)
+//        {
+//            return true;
+//        }
+//        else
+//        {
+//            return false;
+//        }
+//    }
+//    bool youCanMoveRight()
+//    {
+//        if (playerCoordinate[iPlayer][jPlayer + 1] == 0 && (jPlayer + 1) < 8)
+//        {
+//            return true;
+//        }
+//        else
+//        {
+//            return false;
+//        }
+//    }
+//    bool youCanMoveLeft()
+//    {
+//        if (playerCoordinate[iPlayer][jPlayer - 1] == 0 && (jPlayer - 1) >= 0)
+//        {
+//            return true;
+//        }
+//        else
+//        {
+//            return false;
+//        }
+//    }
+//
+//    void moveRight(Map &map);
 };
 
 

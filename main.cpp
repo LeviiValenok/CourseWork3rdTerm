@@ -1,11 +1,14 @@
 #include <iostream>
 #include <stdio.h>
-#include "Map.h"
+#include "Player.h"
 
 int main()
 {
-    Map* map = new Map();
-    map->setCellValue(0, 0, 5);
-    map->outputCTable();
+//    Map* map = new Map();
+    Player* player = new Player(0, 0);
+//
+//
+//    map->setCellValue(0, 0, 5);
+//    map->outputCTable();
     return 0;
 }

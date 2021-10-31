@@ -5,9 +5,7 @@
 #ifndef BOMBERMANLOGIC_MAP_H
 #define BOMBERMANLOGIC_MAP_H
 
-#include "Player.h"
-#include "Enemies.h"
-#include <stdio.h>
+
 
 enum cellType
 {
@@ -39,27 +37,12 @@ class Map
 //        int jMap;
         public:
         friend class Bomb;
-        friend class Player;
         friend class Enemies;
-        Map()
-        {
+        Map();
 
-        }
-        void setCellValue(int i, int j, int value)
-        {
-            table[i][j] = value;
-        }
-        void outputCTable()
-        {
-            for (int i = 0; i < 6; i++)
-            {
-                for (int j = 0; j < 8; j++)
-                {
-                    std::cout << " " << table[i][j] << " ";
-                }
-                std::cout << "\n";
-            }
-        }
+        void setCellValue(int i, int j, int value);
+        void outputCTable();
+
 
 };
 

@@ -5,8 +5,9 @@
 #ifndef BOMBERMANLOGIC_BOMB_H
 #define BOMBERMANLOGIC_BOMB_H
 #include <stdio.h>
-
+#include "Player.h"
 #include "Map.h"
+#include "Enemies.h"
 
 
 class Bomb {
@@ -18,130 +19,18 @@ public:
     friend class Player;
     friend class Map;
     friend class Enemies;
-
-    void setBomb(Player player, Map map)
-    {
-        iBomb = player.iPlayer;
-        jBomb = player.jPlayer;
-        bombCoordinate[iBomb][jBomb];
-//        map.table[iBomb][jBomb] = bomb;
-
-    }
+    void setBomb (Player player, Map& map);
 //try destroy
-    void chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBombCurrent, int jBombCurrent, Map& map, cellType type)
-    {
-        switch (bomb.bombCoordinate[iBombCurrent][jBombCurrent])
-        {
-            case EdestroyedBlock:
-            {
-                map.table[iBombCurrent][jBombCurrent] = EemptyPath;
-                break;
-            }
-            case Eenemies:
-            {
-                //destroy enemy;
-                break;
-            }
-            case Eplayer:
-            {
-                player.health--;
-                if (player.health == 0) {
-                    std::cout << "Game is over :( " << std::endl;
-                }
-                break;
-            }
-        }
-    }
+    void chooseATarget(Player& player, Enemies& enemy, Bomb bomb, int iBombCurrent, int jBombCurrent,
+                       Map& map, cellType type);
 //check neighbors
-    void destroyObjects(Player& player, Enemies& enemy, Bomb bomb, Map& map, cellType type)
-    {
-        int iPlayerCurrent = player.iPlayer;
-        int jPlayerCurrent = player.jPlayer;
-        int iEnemyCurrent = enemy.iEnemy;
-        int jEnemyCurrent = enemy.jEnemy;
+    void destroyObjects(Player& player, Enemies& enemy, Bomb bomb, Map& map, cellType type);
 
-        if (bomb.bombCoordinate[iBomb][jBomb] == EdestroyedBlock ||
-            bomb.bombCoordinate[iBomb][jBomb] == Eenemies || bomb.bombCoordinate[iBomb][jBomb] == Eplayer)
-        {
-            chooseATarget(player, enemy, bomb, iBomb, jBomb, map, type);
-        }
-        if (bomb.bombCoordinate[iBomb + 1][jBomb] == EdestroyedBlock ||
-           bomb.bombCoordinate[iBomb + 1][jBomb] == Eenemies || bomb.bombCoordinate[iBomb + 1][jBomb] == Eplayer)
-        {
-            chooseATarget(player, enemy, bomb, iBomb + 1, jBomb, map, type);
-        }
-        if (bomb.bombCoordinate[iBomb - 1][jBomb] == EdestroyedBlock ||
-            bomb.bombCoordinate[iBomb - 1][jBomb] == Eenemies || bomb.bombCoordinate[iBomb - 1][jBomb] == Eplayer)
-        {
-            chooseATarget(player, enemy, bomb, iBomb - 1, jBomb, map, type);
-        }
-        if (bomb.bombCoordinate[iBomb][jBomb + 1] == EdestroyedBlock ||
-            bomb.bombCoordinate[iBomb][jBomb + 1] == Eenemies || bomb.bombCoordinate[iBomb][jBomb + 1] == Eplayer)
-        {
-            chooseATarget(player, enemy, bomb, iBomb, jBomb + 1, map, type);
-        }
-        if (bomb.bombCoordinate[iBomb][jBomb - 1] == EdestroyedBlock ||
-            bomb.bombCoordinate[iBomb][jBomb - 1] == Eenemies || bomb.bombCoordinate[iBomb][jBomb - 1] == Eplayer)
-        {
-            chooseATarget(player, enemy, bomb, iBomb, jBomb - 1, map, type);
-        }
-    }
+    void destroyBlocks(Map& map);
 
-/*    void destroyBlocks(Map& map)
-    {
-        if (bombCoordinate[iBomb][jBomb] == 1)
-        {
-            map.table[iBomb][jBomb] = 0;
-        }
-        else if (bombCoordinate[iBomb + 1][jBomb] == 1)
-        {
-            map.table[iBomb + 1][jBomb] = 0;
-        }
-        else if (bombCoordinate[iBomb - 1][jBomb] == 1)
-        {
-            map.table[iBomb - 1][jBomb] = 0;
-        } else if (bombCoordinate[iBomb][jBomb + 1] == 1)
-        {
-            map.table[iBomb][jBomb + 1] = 0;
-        } else if (bombCoordinate[iBomb][jBomb - 1] == 1)
-        {
-            map.table[iBomb][jBomb - 1] =0;
-        }
-    }*/
-/*    void destroyEnemies(Enemies& enemy, Player& player, Map map)
-    {
-        //TODO: timer???
-        //TODO: Change enemy's coordinate to current enemy coordinate
-        //TODO: Get current enemy coordinate
-        int iEnemyCurrent = enemy.iEnemy;
-        int jEnemyCurrent = enemy.jEnemy;
-        int enemyCurrentLocation = enemy.enemiesCoordinate[iEnemyCurrent][jEnemyCurrent];
-        if (bombCoordinate[iBomb][jBomb] == enemyCurrentLocation ||
-            bombCoordinate[iBomb + 1][jBomb] == enemyCurrentLocation ||
-            bombCoordinate[iBomb - 1][jBomb] == enemyCurrentLocation ||
-            bombCoordinate[iBomb][jBomb + 1] == enemyCurrentLocation ||
-            bombCoordinate[iBomb][jBomb - 1] == enemyCurrentLocation)
-        {
-            //destroy an enemy
-            player.score++;
-        }
-    }*/
+    void destroyEnemies(Enemies& enemy, Player& player, Map map);
 
-/*    void killPlayer(Player player, Map map)
-    {
-        int iPlayerCurrent = player.iPlayer;
-        int jPlayerCurrent = player.jPlayer;
-        int playerCurrenLocation = player.playerCoordinate[iPlayerCurrent][jPlayerCurrent];
-        if (bombCoordinate[iBomb][jBomb] == playerCurrenLocation ||
-            bombCoordinate[iBomb + 1][jBomb] == playerCurrenLocation ||
-            bombCoordinate[iBomb - 1][jBomb] == playerCurrenLocation ||
-            bombCoordinate[iBomb][jBomb + 1] == playerCurrenLocation ||
-            bombCoordinate[iBomb][jBomb - 1] == playerCurrenLocation)
-        {
-            player.health--;
-        }
-
-    }*/
+    void killPlayer(Player player, Map map);
 
 };
 

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bomberman.dir/Bomb.cpp.obj"
   "CMakeFiles/bomberman.dir/Enemies.cpp.obj"
+  "CMakeFiles/bomberman.dir/Example.cpp.obj"
   "CMakeFiles/bomberman.dir/Map.cpp.obj"
   "CMakeFiles/bomberman.dir/Player.cpp.obj"
   "CMakeFiles/bomberman.dir/main.cpp.obj"
